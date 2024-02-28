@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora VPS - Fase C</title>
+</head>
+<body>
+  <h1>Juan Alexis Florencio Arno - gp1f4a15 - 22/02/2024</h1>
+  <form action="calculadora.php" method="post">
+    <label for="cpu">CPUs:</label>
+    <select name="cpu" id="cpu">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="4">4</option>
+      <option value="8">8</option>
+    </select><br>
+
+    <label for="ram">RAM (en GiB):</label>
+    <select name="ram" id="ram">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="4">4</option>
+      <option value="8">8</option>
+      <option value="16">16</option>
+    </select><br>
+
+    <label for="ssd">Disc dur SSD (en GiB):</label>
+    <select name="ssd" id="ssd">
+      <option value="10">10</option>
+      <option value="20">20</option>
+      <option value="40">40</option>
+      <option value="80">80</option>
+    </select><br>
+
+    <label for="os">Sistema operatiu:</label>
+    <select name="os" id="os">
+      <option value="debian">Debian 10 (1€/mes)</option>
+      <option value="windows">Windows 2019 Std. (5€/mes)</option>
+    </select><br>
+
+    <label for="ip">IP fixa:</label>
+    <input type="radio" name="ip" value="no" checked> No (0€/mes)
+    <input type="radio" name="ip" value="si"> Sí (2€/mes)<br>
+
+    <label for="cpu_type">Tipus de CPU:</label>
+    <input type="radio" name="cpu_type" value="intel" checked> Intel (2€/mes)
+    <input type="radio" name="cpu_type" value="amd"> AMD (1€/mes)<br>
+
+    <label for="access">Tipus Accés:</label>
+    <input type="radio" name="access" value="ssh" checked> Només SSH (0€/mes)
+    <input type="radio" name="access" value="web"> Només consola web (1€/mes)
+    <input type="radio" name="access" value="ssh_web"> SSH i consola web (2€/més)<br>
+
+    <input type="submit" value="Calcular">
+  </form>
+</body>
+</html>
